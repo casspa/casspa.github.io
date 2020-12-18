@@ -51,15 +51,20 @@ html, body {
 	margin: 20px auto;
 }
 
-/*
+h1 {
+	letter-spacing: 3px!important;
+} 
+
 h2 {
-	font-family: var(--fred);
-	text-transform: lowercase;
-	text-align: center;
+	letter-spacing: 3px!important;
 }
-*/
 
-
+.header-border {
+	width: 250px;
+	height: 2px;
+	background: var(--primary-color);
+	margin: 20px auto;
+}
 
 .home-btn {
 	color: white;
@@ -171,6 +176,23 @@ h2 {
 	font-family: var(--raleway);
 	padding: 20px;
 	letter-spacing: 1.5px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* skills section */
+/* ------------------------------------------------------------------------------- */
+
+.skills-section {
+	font-family: var(--raleway);
+	background-color: white;
+	color: var(--gray);
+	text-align: center;
+	font-size: 18px;
+
+}
+
+.skills-section h2{
+	letter-spacing: 0.3px;
 }
 
 /* ------------------------------------------------------------------------------- */
