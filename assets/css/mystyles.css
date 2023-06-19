@@ -2,7 +2,7 @@
 /* google fonts */
 /* ------------------------------------------------------------------------------- */
  /* ADD MORE LATER */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ------------------------------------------------------------------------------- */
@@ -11,35 +11,45 @@
 :root {
 	--primary-color: #d5a971;
 	--primary-light: #e0b379;
-	--gray: #707070;
+	--gray: #1a1a1a;
 	--light-gray: #2b3032a1;
 	--border: #2b303218;
 	--text-color: #ff686b;
-	--monoton: "Monoton", cursive;
-	--bebas-neue: "Bebas Neue&family", cursive; 
-	--fred: "Fredericka the Great", cursive;
-	--opensans: 'Open Sans Condensed', sans-serif;
-	--raleway: 'Raleway', sans-serif;
+	--montserrat: "Montserrat", sans-serif; 
 }
 
 html, body {
 	color: var(--gray)!important;
 	letter-spacing: 1px;
-}
-
-.font-fred {
-	font-family: var(--fred);
+	font-family: var(--montserrat);
 }
 
 /* headings */
 .heading {
-	font-family: var(--fred);
-	font-size: 40px;
+	font-size: 20px;
 	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+.sub-heading {
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+.project-role {
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.project-tools {
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 
 .title {
-	font-family: var(--raleway);
 	padding: 10px;
 	letter-spacing: 1.5px;
 }
@@ -63,19 +73,18 @@ h2 {
 }
 
 .home-btn {
-	color: white;
-	background: rgba(0,0,0,0);
+	color: var(--gray);
+	background-color: white;
 	margin: 30px;
 	border: none;
 	transition: 0.5s;
 	overflow: hidden;
 	outline:none;
-	font-family: var(--raleway);
 }
 
 .home-btn:hover {
 	color: white;
-	background: rgba(255,255,255,0.5);
+	background: var(--gray);
 	border: none;
 	transition: 0.5s;
 	overflow: hidden;
@@ -87,7 +96,7 @@ h2 {
 	border: 1px solid var(--gray);
 	background-color: white;
 	padding: 12px 50px;
-	margin: 30px;
+	margin: 12px;
 	transition: 0.5s;
 }
 
@@ -103,12 +112,6 @@ h2 {
 .site-btn:focus {
 	outline: 0!important;
 }
-
-.portfolio-section .row {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-
 /* ------------------------------------------------------------------------------- */
 /* nav */
 /* ------------------------------------------------------------------------------- */
@@ -126,14 +129,20 @@ h2 {
 	padding-left: 100px!important;
 }*/
 
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar-brand {
-	font-family: var(--fred);
 	letter-spacing: 0.5px;
-	font-size: 35px;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 .nav-link {
-	font-family: var(--raleway);
 	font-size: 15px;
 	/*color: white!important;*/
 }
@@ -153,23 +162,16 @@ h2 {
 /* home section */
 /* ------------------------------------------------------------------------------- */
 .home-section {
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-attachment: fixed;
-	background-size: cover;
-	color: white;
-	min-height: 80%!important;
+	min-height: 10%!important;
 }
 
 .name-title {
-	padding-top: 10%;
-	font-family: var(--fred);
-	font-size: 75px;
+	padding-top: 15%;
+	font-size: 40px;
 	letter-spacing: 2px;
 }
 
 .developer-title {
-	font-family: var(--raleway);
 	padding: 20px;
 	letter-spacing: 1.5px;
 }
@@ -179,12 +181,10 @@ h2 {
 /* ------------------------------------------------------------------------------- */
 
 .skills-section {
-	font-family: var(--raleway);
 	background-color: white;
 	color: var(--gray);
 	text-align: center;
 	font-size: 18px;
-
 }
 
 .skills-section h2{
@@ -196,7 +196,6 @@ h2 {
 /* ------------------------------------------------------------------------------- */
 
 .about-section {
-	font-family: var(--raleway);
 	min-height: 10%!important;
 	background-color: white;
 	color: var(--gray);
@@ -206,27 +205,31 @@ h2 {
 	letter-spacing: 0.3px;
 }
 
+.about-image
+{
+	border-radius: 50%;
+}
+
 /* ------------------------------------------------------------------------------- */
 /* footer section */
 /* ------------------------------------------------------------------------------- */
 
 .footer-section {
-	font-family: var(--raleway);
 	color: var(--gray)!important;
 	letter-spacing: 1px;
 	padding-bottom: 20px;
 }
 
 .footer-section .fa {
-  padding: 20px;
-  font-size: 25px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+ 	padding: 20px;
+ 	font-size: 25px;
+ 	width: 30px;
+  	text-align: center;
+ 	text-decoration: none;
+  	margin: 5px 2px;
+  	border-radius: 50%;
 	color: var(--gray)!important;
-	opacity: 0.7;
+	opacity: .9;
 }
 
 .footer-section .fa:hover {
@@ -241,61 +244,18 @@ h2 {
 	margin: 0 auto;
 	width: 1000px;
 	font-family: var(--raleway);
-} */
+} 
 
 .portfolio-section {
-	font-family: var(--raleway);
 	padding-top: 60px;
-	/*min-height: 60%!important;
-	padding: 0 0 30px 30px!important;*/
+	min-height: 60%!important;
+	padding: 0 0 30px 30px!important;
+}*/
+
+.portfolio-section .row {
+	padding-top: 20px;
 }
 
-.portfolio-video {
-	overflow:hidden;
-	padding-bottom:56.25%;
-	position:relative;
-	height:0;
-	border-radius: 5px;
-	z-index: 1;
-}
-
-.portfolio-video iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-.player {
-  border-radius: 10px;
-  overflow: hidden;
-  z-index: 1;
-  height: 320px;
-  width: 480px;
-}
-
-portfolio-img {
-	margin: 0 auto;
-	width: 100px;
-}
-
-/*
-#shopping-buddy {
-	background: #262626;
-	color: white;
-}
-
-#take-your-pick {
-	background: #d5a971;
-	color: white;
-}
-
-#komo {
-	background: #f2f2f2!important;
-	color: black;
-}
-*/
 
 /* Create two columns that float next to eachother */
 .column {
@@ -319,9 +279,21 @@ portfolio-img {
     margin-top: 0;
   }
 }
+
+/* ------------------------------------------------------------------------------- */
+/* stld page */
+/* ------------------------------------------------------------------------------- */
+.project-heading-section
+{
+	text-align: center;
+	background-size: cover;
+	min-height: 80%!important;
+	border-radius: 12px;
 }
 
-
+.project-description-section {
+	text-align: center;
+}
 
 
 

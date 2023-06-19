@@ -9,7 +9,7 @@ header {
 }
 
 section {
-  padding: 150px 0;
+  padding: 20px;
 }
 
 body {
@@ -23,30 +23,31 @@ html {
 }
 
 .home-section {
-	min-height:100%;
-	padding-top:150px;
 	text-align: center;
 	background: #fff;
 }
 
 .about-section {
 	min-height: 100%;
-	padding-top: 150px;
 	text-align: center;
 	background: #eee;
+	padding-top: 12%;
 }
 
 .portfolio-section {
-	min-height: 100%;
-	padding-top: 150px;
+	margin: auto;
 	text-align: center;
 	background: #fff;
 }
 
 .contact-section {
 	min-height: 100%;
-	padding-top: 150px;
 	text-align: center;
 	background: #eee;
 }
-	
+
+.project-page
+{
+	padding-top: 4%;
+}
+
